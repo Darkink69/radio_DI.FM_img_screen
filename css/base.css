@@ -1,0 +1,307 @@
+body {
+    background: #363636;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.page {
+    margin: 0 auto;
+    background-color: #545454;
+    width: 1030px;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background: #1A1A1A;
+    width: 860px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Поиск */
+#search {
+    display: flex;
+    align-items: center;
+}
+
+#searchDiv {
+    margin: 0 auto;
+    text-align: center;
+    background: #1A1A1A;
+}
+
+#divResultSearchAll {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 865px;
+    /* padding-left: 85px; */
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+/* Стили плеера */
+.player {
+    margin: 0 auto;
+    width: 860px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px; 
+}
+
+.cover_img {
+    cursor: pointer;
+    margin-top: 40px;
+    width:300px; 
+    height: 300px;
+    /* pointer-events: none; */
+}
+
+.track_info {
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+#progress {
+    width: 300px; 
+    height: 15px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.button_back {
+    cursor: pointer;
+    background-image: url(../img/back.svg); 
+    width:46px; 
+    height: 46px;
+}
+
+.button_back:hover {
+    cursor: pointer;
+    background-image: url(../img/back_hover.svg); 
+    width:46px; 
+    height: 46px;
+}
+
+.button_random {
+    cursor: pointer;
+    background-image: url(../img/random.svg); 
+    width:60px; 
+    height: 60px;
+}
+
+.button_random:hover {
+    cursor: pointer;
+    background-image: url(../img/random_hover.svg); 
+    width:60px; 
+    height: 60px;
+}
+
+.button_forward {
+    cursor: pointer;
+    background-image: url(../img/forward.svg); 
+    width: 46px; 
+    height: 46px;
+}
+
+.button_forward:hover {
+    cursor: pointer;
+    background-image: url(../img/forward_hover.svg); 
+    width:46px; 
+    height: 46px;
+}
+
+
+/* Блок "в эфире" */
+#onAir {
+    background-color: aquamarine;
+    color: black;
+    /* padding: 10px; */
+}
+
+
+.small_info {
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    width: 865px;
+    padding-left: 85px;
+    line-height: 15px;
+    /* padding-top: 25px; */
+    padding-bottom: 10px; 
+}
+
+#addFavorite {
+    cursor: pointer;
+    width: 77px;
+}
+
+#more {
+    cursor: pointer;
+    width: 77px;
+}
+
+/* #addFavorite:hover {
+    background: #3FC698;
+    cursor: pointer;
+    width: 77px;
+    border-radius: 50%;
+    padding-top: 10px;
+} */
+
+#removeFavorite {
+    cursor: pointer;
+    width: 77px;
+}
+
+#all_favorite {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 865px;
+    padding-left: 85px;
+    /* height: 100%; */
+    padding-bottom: 15px;
+}
+
+.favoriteChannel {
+    cursor: pointer;
+    background: #C7FFEC;
+    border: 2px solid #3FC698;
+    width: 85px;
+    height: 115px;
+    padding: 10px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.favoriteChannel:hover {
+    cursor: pointer;
+    background: #3FC698;
+    ;
+    border: 2px solid #3FC698;
+    width: 85px;
+    height: 115px;
+    padding: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+#cover_channel {
+    position: relative;
+    /* left: 10px; */
+    width: 100px;
+}
+
+#cover_channel:hover {         
+    filter: alpha(Opacity=50);
+    opacity: 0.5;
+    background-image: url(../img/play.svg); 
+}
+
+
+
+/* Последние треки */
+
+.last_list {
+    /* display: flex; */
+    margin: 0 auto;
+    /* flex-direction: row; */
+    background: #545454;
+    width: 1030px;
+    /* padding-left: 10px; */
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #363636;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.last2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #545454;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.lastId {
+    cursor: pointer;
+    width: 75px;
+    
+}
+
+.last_time_id {
+    /* background-color: #fff; */
+    padding-right: 25px;
+    padding-left: 85px;
+}
+
+.last_track_id {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* Анимация "пластинки" */
+#cover.animate {
+    border-radius: 50%;
+    transition: all 3s;
+}
+
+#cover.animate2 {
+    transform: rotate(360deg);
+    transition: all 10s;
+}
+
+
+
+
+/* Попап на темном фоне */
+#layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    z-index: 10;
+  }
+   
+  #layer::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+   
+  #modal {
+    display: inline-block;
+    background: #fff;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, .3);
+    vertical-align: middle;
+  }
