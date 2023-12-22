@@ -28,10 +28,10 @@ if(localStorage.randomStation === true || localStorage.randomStation === undefin
 }
 
 // текущие треки для всех каналов одного сайта
-let url_track = 'http://api.audioaddict.com/v1/' + nameRadioStation[numRadio] + '/track_history.json';
+let url_track = 'https://api.audioaddict.com/v1/' + nameRadioStation[numRadio] + '/track_history.json';
 
 // вся информация о всех каналах одного сайта
-let url_channel = 'http://api.audioaddict.com/v1/' + nameRadioStation[numRadio] + '/channels.json';
+let url_channel = 'https://api.audioaddict.com/v1/' + nameRadioStation[numRadio] + '/channels.json';
 
 
 
